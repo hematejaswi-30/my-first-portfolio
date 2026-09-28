@@ -1,5 +1,6 @@
 # 🌟 Hema Tejaswi — Personal Portfolio
 
+[![Live Portfolio](https://img.shields.io/badge/Live_Website-hematejaswi--30.github.io%2Fmy--first--portfolio-2ea44f?style=for-the-badge&logo=githubpages&logoColor=white)](https://hematejaswi-30.github.io/my-first-portfolio/)
 [![GitHub Repository](https://img.shields.io/badge/GitHub-my--first--portfolio-181717?style=for-the-badge&logo=github)](https://github.com/hematejaswi-30/my-first-portfolio)
 [![License: MIT](https://img.shields.io/badge/License-MIT-gold.svg?style=for-the-badge)](LICENSE)
 [![Status: Active](https://img.shields.io/badge/Status-Active-success.svg?style=for-the-badge)](#)
