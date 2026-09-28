@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="280" viewBox="0 0 400 280">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7F3EE"/>
+      <stop offset="100%" stop-color="#EAE3D9"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="280" fill="url(#bgGrad)" rx="8"/>
+  <rect x="15" y="15" width="370" height="250" fill="none" stroke="#C9A96E" stroke-width="1.5" stroke-dasharray="6 4" rx="4"/>
+  <circle cx="200" cy="110" r="35" fill="#FFFFFF" stroke="#8B6914" stroke-width="2"/>
+  <path d="M 190 105 C 190 95, 210 95, 210 105 C 210 115, 190 115, 190 125 H 210" fill="none" stroke="#8B6914" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="200" y="175" font-family="'Playfair Display', serif" font-size="18" font-weight="bold" fill="#1A1A1A" text-anchor="middle">Codess.Cafe</text>
+  <text x="200" y="198" font-family="'Inter', sans-serif" font-size="12" fill="#8B6914" text-anchor="middle" letter-spacing="1">WOMEN IN TECH MENTORSHIP</text>
+</svg>

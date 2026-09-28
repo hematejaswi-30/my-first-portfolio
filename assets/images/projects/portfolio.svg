@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A1A1A"/>
+      <stop offset="100%" stop-color="#2D201A"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bgGrad)"/>
+  <!-- Code brackets Icon -->
+  <circle cx="300" cy="170" r="45" fill="#251F1B" stroke="#C9A96E" stroke-width="2"/>
+  <path d="M 285 160 L 273 170 L 285 180 M 315 160 L 327 170 L 315 180 M 303 155 L 297 185" fill="none" stroke="#C9A96E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="300" y="250" font-family="'Playfair Display', serif, sans-serif" font-size="22" font-weight="bold" fill="#F2EDE6" text-anchor="middle">Developer Portfolio</text>
+  <text x="300" y="278" font-family="'Inter', sans-serif" font-size="13" fill="#C9A96E" text-anchor="middle" letter-spacing="2">PERSONAL WEBSITE & UI</text>
+</svg>

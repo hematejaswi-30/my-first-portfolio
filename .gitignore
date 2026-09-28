@@ -1,0 +1,15 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE & Editor Files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node modules / build output (if added in future)
+node_modules/
+dist/
+build/

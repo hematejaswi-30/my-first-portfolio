@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hema Tejaswi — Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Hema Tejaswi — Full Stack Developer & CS Undergraduate building modern web applications end-to-end." />
+  <meta name="theme-color" content="#FAF8F5" />
+  <meta property="og:title" content="Hema Tejaswi — Full Stack Developer" />
+  <meta property="og:description" content="Full-stack developer building web applications from React/Node.js interfaces to backend logic and database design." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════ LOADING SCREEN ═══════════════ -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <svg class="loader-name" viewBox="0 0 600 80" xmlns="http://www.w3.org/2000/svg">
+        <text x="50%" y="55" text-anchor="middle" class="loader-text">Hema Tejaswi</text>
+      </svg>
+      <div class="loader-bar">
+        <div class="loader-bar-fill"></div>
+      </div>
+      <p class="loader-tagline">Loading Portfolio...</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════ CURSOR GLOW ═══════════════ -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ═══════════════ NAVBAR ═══════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Hema Tejaswi</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active" data-section="home">Home</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+        <a href="#certifications" class="nav-link" data-section="certifications">Certifications</a>
+        <a href="#achievements" class="nav-link" data-section="achievements">Achievements</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" class="mobile-link">Home</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#certifications" class="mobile-link">Certifications</a>
+    <a href="#achievements" class="mobile-link">Achievements</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- ═══════════════ SECTION 1: HERO ═══════════════ -->
+  <section class="hero" id="home">
+    <div id="particles-js" class="particles-bg"></div>
+    <div class="hero-container">
+      <div class="hero-text">
+        <p class="hero-greeting reveal-up">Hello, I'm</p>
+        <h1 class="hero-name reveal-up delay-1">Hema Tejaswi</h1>
+        <div class="hero-role reveal-up delay-2">
+          <span class="role-prefix">A </span>
+          <span id="typed-role"></span>
+        </div>
+        <p class="hero-tagline reveal-up delay-3">
+          Full-stack developer & CS undergraduate building web applications end-to-end — from React/Node.js interfaces to backend logic, database design, and AI-powered solutions.
+        </p>
+        <div class="hero-buttons reveal-up delay-4">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="assets/resume.pdf" class="btn btn-outline" target="_blank">Download Resume</a>
+        </div>
+        <div class="hero-socials reveal-up delay-5">
+          <a href="https://github.com/hematejaswi-30" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/hema-tejaswi-682020297" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://leetcode.com/hematejaswi" target="_blank" rel="noopener" aria-label="LeetCode" class="social-icon"><i class="fa-solid fa-code"></i></a>
+          <a href="mailto:hematejaswi29@gmail.com" aria-label="Email" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-image reveal-up delay-2">
+        <div class="hero-photo-wrapper">
+          <div class="hero-photo-ring"></div>
+          <div class="hero-photo-ring ring-dashed"></div>
+          <img src="assets/images/profile.jpg" alt="Hema Tejaswi" class="hero-photo" onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=Hema+Tejaswi&size=400&background=C9A96E&color=fff&font-size=0.35'" />
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SECTION 2: ABOUT ═══════════════ -->
+  <section class="section about" id="about">
+    <div class="constellation-wrapper const-top-right reveal-up">
+      <svg width="400" height="400" viewBox="0 0 400 400">
+        <path class="const-line" d="M350 50 L250 120 L280 250 L150 300 L120 180 L250 120" />
+        <path class="const-line" d="M120 180 L50 220" />
+        <circle class="const-node" cx="350" cy="50" r="5" />
+        <circle class="const-node" cx="250" cy="120" r="6" />
+        <circle class="const-node" cx="280" cy="250" r="4" />
+        <circle class="const-node" cx="150" cy="300" r="5" />
+        <circle class="const-node" cx="120" cy="180" r="6" />
+        <circle class="const-node" cx="50" cy="220" r="4" />
+      </svg>
+    </div>
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-number">01</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-stats reveal-left">
+          <div class="stat-item">
+            <div class="stat-icon"><i class="fa-solid fa-code"></i></div>
+            <span class="stat-number" data-target="5">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon"><i class="fa-solid fa-building"></i></div>
+            <span class="stat-number" data-target="2">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Work Experiences</span>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon"><i class="fa-solid fa-certificate"></i></div>
+            <span class="stat-number" data-target="4">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+        </div>
+        <div class="about-content reveal-right">
+          <p>
+            I'm a passionate Full Stack Developer and Computer Science undergraduate at
+            <strong>Techno Institute of Engineering and Management, Kolkata</strong>.
+            I build web applications end-to-end — from crafting intuitive React.js interfaces
+            to engineering robust Node.js backends with MongoDB and MySQL databases.
+          </p>
+          <p>
+            With hands-on experience in AI-powered solutions and cloud infrastructure,
+            I bring a unique blend of frontend finesse and backend engineering.
+            Currently enrolled at <strong>Shreyians Coding School</strong> for foundational
+            coding training, I'm constantly sharpening my skills to build better software every day.
+          </p>
+          <blockquote class="about-quote">
+            "I don't just write code — I build solutions that make a real difference."
+          </blockquote>
+          <div class="about-toolkit">
+            <span class="toolkit-label">My Daily Toolkit</span>
+            <div class="toolkit-badges">
+              <span class="badge">React.js</span>
+              <span class="badge">Node.js</span>
+              <span class="badge">Python</span>
+              <span class="badge">JavaScript</span>
+              <span class="badge">Java</span>
+              <span class="badge">Express.js</span>
+              <span class="badge">MongoDB</span>
+              <span class="badge">MySQL</span>
+              <span class="badge">Tailwind CSS</span>
+              <span class="badge">Git</span>
+              <span class="badge">Power BI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SECTION 3: SKILLS ═══════════════ -->
+  <section class="section skills black-splash" id="skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-number">02</span>
+        <h2 class="section-title">My Skills</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Technologies and tools I work with daily</p>
+      </div>
+      <div class="bento-grid">
+        <!-- Large: Frontend -->
+        <div class="bento-card bento-large magnetic-hover">
+          <div class="bento-icon"><i class="fa-brands fa-react"></i></div>
+          <h3 class="bento-title">Frontend Development</h3>
+          <p class="bento-desc">Building responsive, dynamic UIs with React.js, JavaScript, and Tailwind CSS.</p>
+        </div>
+        <!-- Tall: Python -->
+        <div class="bento-card bento-tall magnetic-hover">
+          <div class="bento-icon"><i class="fa-brands fa-python"></i></div>
+          <h3 class="bento-title">Python</h3>
+          <p class="bento-desc">AI integrations & logic</p>
+        </div>
+        <!-- Small: Java -->
+        <div class="bento-card bento-small magnetic-hover">
+          <div class="bento-icon"><i class="fa-brands fa-java"></i></div>
+          <h3 class="bento-title">Java</h3>
+        </div>
+        <!-- Small: C / C++ -->
+        <div class="bento-card bento-small magnetic-hover">
+          <div class="bento-icon"><i class="fa-solid fa-c"></i></div>
+          <h3 class="bento-title">C / C++</h3>
+        </div>
+        <!-- Wide: Backend -->
+        <div class="bento-card bento-wide magnetic-hover">
+          <div class="bento-icon"><i class="fa-brands fa-node-js"></i></div>
+          <h3 class="bento-title">Backend Architecture</h3>
+          <p class="bento-desc">Scalable servers with Node.js & Express</p>
+        </div>
+        <!-- Small: MongoDB -->
+        <div class="bento-card bento-small magnetic-hover">
+          <div class="bento-icon"><i class="fa-solid fa-leaf"></i></div>
+          <h3 class="bento-title">MongoDB</h3>
+        </div>
+        <!-- Small: MySQL -->
+        <div class="bento-card bento-small magnetic-hover">
+          <div class="bento-icon"><i class="fa-solid fa-database"></i></div>
+          <h3 class="bento-title">MySQL</h3>
+        </div>
+        <!-- Small: Power BI -->
+        <div class="bento-card bento-small magnetic-hover">
+          <div class="bento-icon"><i class="fa-solid fa-chart-pie"></i></div>
+          <h3 class="bento-title">Power BI</h3>
+        </div>
+        <!-- Small: Git -->
+        <div class="bento-card bento-small magnetic-hover">
+          <div class="bento-icon"><i class="fa-brands fa-git-alt"></i></div>
+          <h3 class="bento-title">Git & GitHub</h3>
+        </div>
+        <!-- Wide: Core CS -->
+        <div class="bento-card bento-wide magnetic-hover">
+          <div class="bento-icon"><i class="fa-solid fa-microchip"></i></div>
+          <h3 class="bento-title">Computer Science</h3>
+          <p class="bento-desc">Data Structures, Algorithms, OOP, OS, DBMS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SECTION 4: PROJECTS ═══════════════ -->
+  <section class="section projects" id="projects">
+    <div class="constellation-wrapper const-bottom-left reveal-up">
+      <svg width="350" height="350" viewBox="0 0 350 350">
+        <path class="const-line" d="M50 300 L150 250 L100 150 L250 180 L300 80 L100 150" />
+        <circle class="const-node" cx="50" cy="300" r="5" />
+        <circle class="const-node" cx="150" cy="250" r="4" />
+        <circle class="const-node" cx="100" cy="150" r="6" />
+        <circle class="const-node" cx="250" cy="180" r="5" />
+        <circle class="const-node" cx="300" cy="80" r="4" />
+      </svg>
+    </div>
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Real-world applications I've built</p>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card reveal-up magnetic-hover">
+          <div class="project-image">
+            <img src="assets/images/projects/niveshview.svg" alt="NiveshView Dashboard" onerror="this.onerror=null;this.src='https://placehold.co/600x400/2a2a2a/C9A96E?text=NiveshView'" />
+            <span class="project-featured-badge">Featured</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">NiveshView — Personal Finance Dashboard</h3>
+            <p class="project-desc">Built a personal finance platform with automated expense tracking, budget analysis, and AI-powered financial insights for optimizing savings. Features interactive dashboards with real-time data visualization, predictive analytics for spending patterns, and personalized recommendations.</p>
+            <div class="project-tech">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">React.js</span>
+              <span class="tech-pill">AI / ML</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/hematejaswi-30" class="project-link" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card reveal-up delay-1 magnetic-hover">
+          <div class="project-image">
+            <img src="assets/images/projects/dropout.svg" alt="AI Dropout Detection" onerror="this.onerror=null;this.src='https://placehold.co/600x400/2a2a2a/C9A96E?text=Dropout+Detection'" />
+            <span class="project-progress-badge"><i class="fa-solid fa-spinner fa-spin"></i> In Progress</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">AI-Based Dropout Detection & Counselling System</h3>
+            <p class="project-desc">Proposed an ML model to predict student dropout risk using academic performance, attendance, behavioral, and socio-economic indicators. Designed a personalized counselling and intervention framework with Power BI visualizations for real-time monitoring.</p>
+            <div class="project-tech">
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Tailwind CSS</span>
+              <span class="tech-pill">Power BI</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/hematejaswi-30" class="project-link" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card reveal-up delay-2 magnetic-hover">
+          <div class="project-image">
+            <img src="assets/images/projects/healthcare.svg" alt="Healthcare Support App" onerror="this.onerror=null;this.src='https://placehold.co/600x400/2a2a2a/C9A96E?text=Healthcare+App'" />
+            <span class="project-progress-badge"><i class="fa-solid fa-spinner fa-spin"></i> In Progress</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Healthcare Support Web Application</h3>
+            <p class="project-desc">Built a web application enabling patients and volunteers to submit support requests through an intuitive online form, with an automated acknowledgment system that reduced manual effort and improved response communication for healthcare NGOs.</p>
+            <div class="project-tech">
+              <span class="tech-pill">HTML</span>
+              <span class="tech-pill">CSS</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">GitHub</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/hematejaswi-30" class="project-link" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal-up delay-3 magnetic-hover">
+          <div class="project-image">
+            <img src="assets/images/projects/portfolio.svg" alt="Developer Portfolio" onerror="this.onerror=null;this.src='https://placehold.co/600x400/2a2a2a/C9A96E?text=Portfolio+Website'" />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Developer Portfolio Website</h3>
+            <p class="project-desc">Designed and developed a fully responsive, custom personal portfolio to showcase my projects and experience. Features smooth scroll animations, interactive SVG elements, magnetic hover effects, and a dynamic dark-to-light theme transition.</p>
+            <div class="project-tech">
+              <span class="tech-pill">HTML5</span>
+              <span class="tech-pill">CSS3</span>
+              <span class="tech-pill">Vanilla JS</span>
+              <span class="tech-pill">Particles.js</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/hematejaswi-30" class="project-link" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SECTION 5: EXPERIENCE ═══════════════ -->
+  <section class="section experience" id="experience">
+    <div class="constellation-wrapper const-top-right reveal-up">
+      <svg width="400" height="300" viewBox="0 0 400 300">
+        <path class="const-line" d="M350 250 L250 150 L300 50 L150 80 L250 150" />
+        <path class="const-line" d="M150 80 L50 120" />
+        <circle class="const-node" cx="350" cy="250" r="4" />
+        <circle class="const-node" cx="250" cy="150" r="6" />
+        <circle class="const-node" cx="300" cy="50" r="5" />
+        <circle class="const-node" cx="150" cy="80" r="5" />
+        <circle class="const-node" cx="50" cy="120" r="4" />
+      </svg>
+    </div>
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Experience</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">My professional journey so far</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-line"></div>
+        <!-- Entry 1 -->
+        <div class="timeline-entry reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-badge internship">Internship · Remote</span>
+            <h3 class="timeline-role">Software Development Intern</h3>
+            <p class="timeline-company"><i class="fa-solid fa-building"></i> Infyntrek Systemes</p>
+            <p class="timeline-period"><i class="fa-regular fa-calendar"></i> Feb 2026 – Apr 2026</p>
+            <ul class="timeline-tasks">
+              <li>Built a full-stack AI-powered financial intelligence platform for personal finance management and business analytics</li>
+              <li>Developed NiveshView, a personal finance dashboard, using React.js, Python, and machine learning for expense tracking, budget analysis, and financial insights</li>
+            </ul>
+            <a href="assets/infyntrek-certificate.pdf" target="_blank" class="timeline-cert-link"><i class="fa-solid fa-file-pdf"></i> View Certificate</a>
+          </div>
+        </div>
+        <!-- Entry 2 -->
+        <div class="timeline-entry right reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-badge">Mentorship · Remote</span>
+            <h3 class="timeline-role">Technical Mentee</h3>
+            <p class="timeline-company"><i class="fa-solid fa-building"></i> Codess.Cafe — Women in Tech Mentorship Program</p>
+            <p class="timeline-period"><i class="fa-regular fa-calendar"></i> Dec 2023 – Dec 2024</p>
+            <ul class="timeline-tasks">
+              <li>Selected from 750+ applicants nationwide for a 12-month mentorship program supporting women in technology and software engineering</li>
+              <li>Worked with senior engineers and industry mentors on technical projects, including code reviews, architecture discussions, and pair programming</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Entry 3 - Education -->
+        <div class="timeline-entry reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-badge freelance">Education</span>
+            <h3 class="timeline-role">B.Tech in Computer Science & Engineering</h3>
+            <p class="timeline-company"><i class="fa-solid fa-graduation-cap"></i> Techno Institute of Engineering and Management, Kolkata</p>
+            <p class="timeline-period"><i class="fa-regular fa-calendar"></i> Expected May 2027 · CGPA: 7.63/10</p>
+            <ul class="timeline-tasks">
+              <li>Relevant Coursework: Data Structures & Algorithms, OOP, Operating Systems, DBMS</li>
+              <li>Currently enrolled at Shreyians Coding School for foundational coding training</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SECTION 6: CERTIFICATIONS ═══════════════ -->
+  <section class="section certifications black-splash" id="certifications">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-number">05</span>
+        <h2 class="section-title">Certifications</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Professional certifications and programs</p>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card reveal-up">
+          <div class="cert-image-wrapper">
+            <img src="assets/images/certificates/codess-cafe.svg" alt="Codess.Cafe Mentorship" onerror="this.onerror=null;this.src='https://placehold.co/400x280/F2EDE6/8B6914?text=Codess.Cafe'" />
+          </div>
+          <div class="cert-body">
+            <span class="cert-issuer"><i class="fa-solid fa-users"></i> Codess.Cafe</span>
+            <h3 class="cert-name">Women in Tech Mentorship Program</h3>
+            <p class="cert-date">Issued: January 2026</p>
+          </div>
+        </div>
+        <div class="cert-card reveal-up delay-1">
+          <div class="cert-image-wrapper">
+            <a href="assets/images/certificates/oracle-cloud.png" target="_blank">
+              <img src="assets/images/certificates/oracle-cloud.png" alt="Oracle Cloud AI" onerror="this.onerror=null;this.src='https://placehold.co/400x280/F2EDE6/8B6914?text=Oracle+Cloud'" />
+            </a>
+          </div>
+          <div class="cert-body">
+            <span class="cert-issuer"><i class="fa-solid fa-cloud"></i> Oracle</span>
+            <h3 class="cert-name">OCI 2025 Certified AI Foundations Associate</h3>
+            <p class="cert-date"><a href="assets/images/certificates/oracle-cloud.png" target="_blank" style="color:#C9A96E;">View Certificate →</a></p>
+          </div>
+        </div>
+        <div class="cert-card reveal-up delay-2">
+          <div class="cert-image-wrapper">
+            <img src="assets/images/certificates/claude-101.svg" alt="Claude 101" onerror="this.onerror=null;this.src='https://placehold.co/400x280/F2EDE6/8B6914?text=Claude+101'" />
+          </div>
+          <div class="cert-body">
+            <span class="cert-issuer"><i class="fa-solid fa-robot"></i> Anthropic</span>
+            <h3 class="cert-name">Claude 101</h3>
+            <p class="cert-date"><a href="https://verify.skilljar.com/c/kew33thkhben" target="_blank" style="color:#C9A96E;">Verify →</a></p>
+          </div>
+        </div>
+        <div class="cert-card reveal-up delay-3">
+          <div class="cert-image-wrapper">
+            <img src="assets/images/certificates/claude-code.svg" alt="Claude Code in Action" onerror="this.onerror=null;this.src='https://placehold.co/400x280/F2EDE6/8B6914?text=Claude+Code'" />
+          </div>
+          <div class="cert-body">
+            <span class="cert-issuer"><i class="fa-solid fa-robot"></i> Anthropic</span>
+            <h3 class="cert-name">Claude Code in Action</h3>
+            <p class="cert-date"><a href="https://verify.skilljar.com/c/haekna8aw8e5" target="_blank" style="color:#C9A96E;">Verify →</a></p>
+          </div>
+        </div>
+        <!-- 5th Cert: Internship -->
+        <div class="cert-card reveal-up delay-4">
+          <div class="cert-image-wrapper">
+            <a href="assets/infyntrek-certificate.pdf" target="_blank">
+              <img src="assets/images/certificates/infyntrek.svg" alt="Infyntrek Internship" onerror="this.onerror=null;this.src='https://placehold.co/400x280/2a2a2a/C9A96E?text=Internship+PDF'" />
+            </a>
+          </div>
+          <div class="cert-body">
+            <span class="cert-issuer"><i class="fa-solid fa-building"></i> Infyntrek Systemes</span>
+            <h3 class="cert-name">Internship Completion Certificate</h3>
+            <p class="cert-date"><a href="assets/infyntrek-certificate.pdf" target="_blank" style="color:#C9A96E;">View PDF →</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SECTION 7: ACHIEVEMENTS ═══════════════ -->
+  <section class="section achievements black-splash" id="achievements">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-number">06</span>
+        <h2 class="section-title">Achievements & Recognition</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Milestones that define my journey</p>
+      </div>
+      <div class="achievements-stats reveal-up">
+        <div class="achievement-stat">
+          <span class="achievement-stat-number" data-target="750">0</span><span class="stat-suffix">+</span>
+          <span class="achievement-stat-label">Applicants Beaten for Codess.Cafe</span>
+        </div>
+        <div class="achievement-stat">
+          <span class="achievement-stat-number" data-target="4">0</span><span class="stat-suffix">+</span>
+          <span class="achievement-stat-label">Certifications</span>
+        </div>
+        <div class="achievement-stat">
+          <span class="achievement-stat-number" data-target="5">0</span><span class="stat-suffix">+</span>
+          <span class="achievement-stat-label">Projects Built</span>
+        </div>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card reveal-up">
+          <span class="achievement-badge">🏆 Competition</span>
+          <h3 class="achievement-title">Smart India Hackathon (SIH) 2025</h3>
+          <p class="achievement-org">Government of India Initiative</p>
+          <p class="achievement-desc">Participated in Smart India Hackathon 2025 — India's largest national-level hackathon. Proposed an AI-Based Dropout Detection and Counselling System addressing a critical educational challenge.</p>
+        </div>
+        <div class="achievement-card reveal-up delay-1">
+          <span class="achievement-badge academic">🎓 Mentorship</span>
+          <h3 class="achievement-title">Codess.Cafe — Women in Tech</h3>
+          <p class="achievement-org">Selected from 750+ Applicants Nationwide</p>
+          <p class="achievement-desc">Earned a spot in an elite 12-month mentorship program for women in technology, working directly with senior engineers on code reviews, architecture discussions, and pair programming.</p>
+        </div>
+        <div class="achievement-card reveal-up delay-2">
+          <span class="achievement-badge">💻 Competitive Coding</span>
+          <h3 class="achievement-title">Active on LeetCode</h3>
+          <p class="achievement-org">University Coding Club Member</p>
+          <p class="achievement-desc">Active member of the university coding club with strong problem-solving and competitive programming ability. Regularly solving problems on LeetCode to strengthen DSA skills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SECTION 8: CONTACT ═══════════════ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-number">07</span>
+        <h2 class="section-title">Let's Work Together</h2>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Have a project in mind? Let's talk!</p>
+      </div>
+      <div class="contact-grid">
+        <form class="contact-form reveal-left" id="contactForm" novalidate>
+          <div class="form-field">
+            <input type="text" id="name" name="name" required placeholder=" " autocomplete="name" />
+            <label for="name">Full Name</label>
+            <div class="field-line"></div>
+          </div>
+          <div class="form-field">
+            <input type="email" id="email" name="email" required placeholder=" " autocomplete="email" />
+            <label for="email">Email Address</label>
+            <div class="field-line"></div>
+          </div>
+          <div class="form-field">
+            <input type="text" id="subject" name="subject" required placeholder=" " />
+            <label for="subject">Subject</label>
+            <div class="field-line"></div>
+          </div>
+          <div class="form-field">
+            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+            <label for="message">Message</label>
+            <div class="field-line"></div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit">
+            <span>Send Message</span>
+            <div class="btn-shimmer"></div>
+          </button>
+          <div class="form-status" id="formStatus"></div>
+        </form>
+        <div class="contact-info reveal-right">
+          <div class="contact-row">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:hematejaswi29@gmail.com" class="contact-value">hematejaswi29@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+91-8340713815</span>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Kolkata, West Bengal, India</span>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://linkedin.com/in/hema-tejaswi-682020297" target="_blank" rel="noopener" class="contact-social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/hematejaswi-30" target="_blank" rel="noopener" class="contact-social-icon"><i class="fa-brands fa-github"></i></a>
+            <a href="https://leetcode.com/hematejaswi" target="_blank" rel="noopener" class="contact-social-icon"><i class="fa-solid fa-code"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-name">Hema Tejaswi</p>
+      <p class="footer-tagline">Building solutions that make a real difference, one line at a time.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/hematejaswi-30" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/hema-tejaswi-682020297" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://leetcode.com/hematejaswi" target="_blank" rel="noopener" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+        <a href="mailto:hematejaswi29@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Hema Tejaswi. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

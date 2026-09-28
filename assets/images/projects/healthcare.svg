@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#122421"/>
+      <stop offset="100%" stop-color="#1B3833"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bgGrad)"/>
+  <!-- Heartbeat / Cross Icon -->
+  <circle cx="300" cy="170" r="45" fill="#152B27" stroke="#34D399" stroke-width="2"/>
+  <path d="M 285 170 H 293 L 297 155 L 303 185 L 307 170 H 315" fill="none" stroke="#34D399" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="300" y="250" font-family="'Playfair Display', serif, sans-serif" font-size="22" font-weight="bold" fill="#F2EDE6" text-anchor="middle">Healthcare Support App</text>
+  <text x="300" y="278" font-family="'Inter', sans-serif" font-size="13" fill="#34D399" text-anchor="middle" letter-spacing="2">PATIENT & NGO VOLUNTEER PLATFORM</text>
+</svg>
