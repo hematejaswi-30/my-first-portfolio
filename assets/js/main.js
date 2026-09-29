@@ -256,10 +256,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (submitBtn) submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
                 
                 try {
-                    const response = await fetch('https://formsubmit.co/ajax/hematejaswi29@gmail.com', {
+                    const object = Object.fromEntries(formData);
+                    const json = JSON.stringify(object);
+
+                    const response = await fetch('https://api.web3forms.com/submit', {
                         method: 'POST',
-                        headers: { 'Accept': 'application/json' },
-                        body: formData
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: json
                     });
                     
                     if (response.ok) {
@@ -272,7 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 } catch (error) {
                     console.error("Form error:", error);
-                    status.textContent = 'Error: ' + error.message + ' (Are you opening this from file:///?)';
+                    status.textContent = 'An error occurred. Please try again later.';
                     status.style.color = '#e74c3c';
                 }
                 
