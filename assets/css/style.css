@@ -1543,6 +1543,10 @@ body {
     margin-right: 0;
     padding: 30px;
   }
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
   
   .achievements-stats {
     flex-wrap: wrap;
