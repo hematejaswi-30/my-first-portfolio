@@ -1,0 +1,12 @@
+{
+  "name": "my-first-portfolio",
+  "version": "1.0.0",
+  "description": "Hema Tejaswi Personal Portfolio Website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx -y serve ."
+  },
+  "keywords": [],
+  "author": "Hema Tejaswi",
+  "license": "MIT"
+}

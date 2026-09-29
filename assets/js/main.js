@@ -243,17 +243,40 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('contactForm');
     const status = document.getElementById('formStatus');
     if (form) {
-        form.addEventListener('submit', (e) => {
+        form.addEventListener('submit', async (e) => {
             e.preventDefault();
             let valid = true;
             form.querySelectorAll('[required]').forEach(input => {
                 if (!input.value.trim()) valid = false;
             });
             if (valid && status) {
-                status.textContent = 'Message sent successfully!';
-                status.style.color = '#27ae60';
-                form.reset();
-                setTimeout(() => { status.textContent = ''; }, 3000);
+                const formData = new FormData(form);
+                const submitBtn = form.querySelector('button[type="submit"]');
+                const originalText = submitBtn ? submitBtn.innerHTML : 'Send Message';
+                if (submitBtn) submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+                
+                try {
+                    const response = await fetch('https://formsubmit.co/ajax/hematejaswi29@gmail.com', {
+                        method: 'POST',
+                        headers: { 'Accept': 'application/json' },
+                        body: formData
+                    });
+                    
+                    if (response.ok) {
+                        status.textContent = 'Message sent successfully!';
+                        status.style.color = '#27ae60';
+                        form.reset();
+                    } else {
+                        status.textContent = 'Failed to send message. Please try again.';
+                        status.style.color = '#e74c3c';
+                    }
+                } catch (error) {
+                    status.textContent = 'An error occurred. Please try again later.';
+                    status.style.color = '#e74c3c';
+                }
+                
+                if (submitBtn) submitBtn.innerHTML = originalText;
+                setTimeout(() => { status.textContent = ''; }, 5000);
             }
         });
     }
