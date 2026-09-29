@@ -1212,6 +1212,15 @@ body {
   border-top: 5px solid #C9A96E;
 }
 
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-field {
+  flex: 1;
+}
+
 .form-field {
   position: relative;
   margin-bottom: 28px;
