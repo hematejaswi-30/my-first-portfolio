@@ -271,7 +271,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         status.style.color = '#e74c3c';
                     }
                 } catch (error) {
-                    status.textContent = 'An error occurred. Please try again later.';
+                    console.error("Form error:", error);
+                    status.textContent = 'Error: ' + error.message + ' (Are you opening this from file:///?)';
                     status.style.color = '#e74c3c';
                 }
                 
