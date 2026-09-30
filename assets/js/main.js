@@ -1,18 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // 1. CONSTELLATION LOADING SCREEN
+    // 1. LOADING SCREEN
     const loader = document.getElementById('loader');
     if (loader) {
         setTimeout(() => {
-            loader.classList.add('supernova');
-            
+            loader.classList.add('hidden');
             setTimeout(() => {
-                loader.classList.add('hidden');
-                setTimeout(() => {
-                    loader.style.display = 'none';
-                }, 600);
-            }, 500); // 500ms for supernova explosion before hiding
-        }, 3200); // wait 3.2s for stars and lines to fully draw
+                loader.style.display = 'none';
+            }, 600);
+        }, 2500);
     }
 
     // 2. CURSOR GLOW EFFECT
