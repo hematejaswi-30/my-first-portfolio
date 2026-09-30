@@ -1,14 +1,34 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // 1. LOADING SCREEN
+    // 1. GALAXY LOADING SCREEN
     const loader = document.getElementById('loader');
+    const counterEl = document.getElementById('loader-counter');
+    const taglineEl = document.getElementById('loader-tagline');
+    
     if (loader) {
-        setTimeout(() => {
-            loader.classList.add('hidden');
-            setTimeout(() => {
-                loader.style.display = 'none';
-            }, 600);
-        }, 2500);
+        let count = 0;
+        const duration = 2500;
+        const interval = 30;
+        const increment = (100 / (duration / interval));
+        
+        const counter = setInterval(() => {
+            count += increment;
+            if (count >= 100) {
+                count = 100;
+                clearInterval(counter);
+                if (taglineEl) taglineEl.textContent = 'System Ready';
+                
+                loader.classList.add('supernova');
+                
+                setTimeout(() => {
+                    loader.classList.add('hidden');
+                    setTimeout(() => {
+                        loader.style.display = 'none';
+                    }, 600);
+                }, 500);
+            }
+            if (counterEl) counterEl.textContent = Math.floor(count) + '%';
+        }, interval);
     }
 
     // 2. CURSOR GLOW EFFECT

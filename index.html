@@ -21,14 +21,24 @@
 
   <!-- ═══════════════ LOADING SCREEN ═══════════════ -->
   <div class="loader" id="loader">
-    <div class="loader-content">
-      <svg class="loader-name" viewBox="0 0 600 80" xmlns="http://www.w3.org/2000/svg">
-        <text x="50%" y="55" text-anchor="middle" class="loader-text">Hema Tejaswi</text>
-      </svg>
-      <div class="loader-bar">
-        <div class="loader-bar-fill"></div>
+    <div class="galaxy-loader-content">
+      <div class="nebula-ring"></div>
+      <div class="nebula-ring ring-2"></div>
+      
+      <div class="counter-text" id="loader-counter">0%</div>
+      
+      <div class="constellation-bg">
+        <svg width="200" height="200" viewBox="0 0 200 200">
+          <path class="loader-const-line" d="M40,50 L100,20 L160,60 L130,140 L70,150 Z" />
+          <circle cx="40" cy="50" r="3" class="loader-star" />
+          <circle cx="100" cy="20" r="3" class="loader-star" />
+          <circle cx="160" cy="60" r="3" class="loader-star" />
+          <circle cx="130" cy="140" r="3" class="loader-star" />
+          <circle cx="70" cy="150" r="3" class="loader-star" />
+        </svg>
       </div>
-      <p class="loader-tagline">Loading Portfolio...</p>
+
+      <p class="loader-tagline" id="loader-tagline">Initializing Universe...</p>
     </div>
   </div>
 
