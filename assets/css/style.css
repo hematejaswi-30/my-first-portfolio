@@ -1481,6 +1481,12 @@ body {
 }
 
 @media (max-width: 768px) {
+  .loader-name {
+    max-width: 320px;
+  }
+  .loader-text {
+    font-size: 40px;
+  }
   .nav-links { display: none; }
   .nav-hamburger {
     display: flex;
