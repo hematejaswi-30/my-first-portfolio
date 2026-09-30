@@ -1535,9 +1535,13 @@ body {
     margin: 0 auto;
   }
   .about-grid { grid-template-columns: 1fr; }
-  .about::before {
-    width: 100%;
-    height: 340px;
+  .about { background: #151515; }
+  .about::before { display: none; }
+  .about .section-title { color: #ffffff; }
+  .about .about-content p { color: #d0d0d0; }
+  .about .about-quote { 
+    color: #C9A96E; 
+    background: rgba(201,169,110,0.08);
   }
   .about-stats {
     flex-direction: row;
