@@ -16,9 +16,9 @@
   <circle cx="300" cy="110" r="8" fill="#C9A96E"/>
 
   <!-- Text -->
-  <text x="300" y="220" font-family="'Playfair Display', Georgia, serif" font-size="36" font-weight="bold" fill="#F2EDE6" text-anchor="middle" letter-spacing="2">CODESS.CAFE</text>
+  <text x="300" y="220" font-family="'Playfair Display', Georgia, serif" font-size="36" font-weight="bold" fill="#F2EDE6" text-anchor="middle" letter-spacing="2">ORACLE</text>
   
   <text x="300" y="270" font-family="'Inter', Arial, sans-serif" font-size="18" fill="#C9A96E" text-anchor="middle" letter-spacing="4">CERTIFICATE OF ACHIEVEMENT</text>
   
-  <text x="300" y="315" font-family="'Inter', Arial, sans-serif" font-size="22" font-weight="500" fill="#aaa" text-anchor="middle">Mentorship Program</text>
+  <text x="300" y="315" font-family="'Inter', Arial, sans-serif" font-size="22" font-weight="500" fill="#aaa" text-anchor="middle">OCI AI Foundations</text>
 </svg>
