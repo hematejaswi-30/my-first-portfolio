@@ -255,9 +255,9 @@ body {
   top: 80px;
   right: 24px;
   width: 250px;
-  background: rgba(250,248,245,0.98);
+  background: rgba(26,26,26,0.98);
   backdrop-filter: blur(20px);
-  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
   border-radius: 16px;
   border: 1px solid rgba(201,169,110,0.2);
   z-index: 999;
@@ -282,11 +282,11 @@ body {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 20px;
-  color: #1a1a1a;
+  color: #ffffff;
   text-decoration: none;
   width: 100%;
   padding-bottom: 8px;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
   transition: color 0.3s;
 }
 
